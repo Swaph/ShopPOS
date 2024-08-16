@@ -1,0 +1,183 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1, 2, 3">
+
+        <TableRow>
+            <TextView android:layout_span="1" android:layout_weight="1" android:text="@string/item" android:textStyle="bold"/>
+            <TextView android:id="@+id/labelUnitPrice" android:layout_span="1" android:layout_weight="1" android:text="@string/unit_price" android:textStyle="bold"/>
+            <TextView android:id="@+id/labelQuantity" android:layout_span="1" android:layout_weight="1" android:text="@string/quantity" android:textStyle="bold"/>
+            <TextView android:id="@+id/labelGrandTotal" android:layout_span="1" android:layout_weight="1" android:text="@string/grand_total" android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="56dp"
+                android:text="@string/bread"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etBreadPrice"
+                android:layout_width="99dp"
+                android:autofillHints="unitPrice"
+                android:hint="@string/unit_price"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etBreadQuantity"
+                android:autofillHints="quantity"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etBreadTotal"
+                android:autofillHints="grandTotal"
+                android:focusable="false"
+                android:hint="@string/grand_total"
+                android:inputType="numberDecimal"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:text="@string/pen"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etPenPrice"
+                android:layout_width="101dp"
+                android:autofillHints="unitPrice"
+                android:hint="@string/unit_price"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etPenQuantity"
+                android:autofillHints="quantity"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etPenTotal"
+                android:layout_width="164dp"
+                android:autofillHints="grandTotal"
+                android:focusable="false"
+                android:hint="@string/grand_total"
+                android:inputType="numberDecimal"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:text="@string/watch"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etWatchPrice"
+                android:autofillHints="unitPrice"
+                android:hint="@string/unit_price"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etWatchQuantity"
+                android:autofillHints="quantity"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/etWatchTotal"
+                android:inputType="numberDecimal"
+                android:focusable="false"
+                android:hint="@string/grand_total"
+                android:autofillHints="grandTotal" />
+        </TableRow>
+
+        <TableRow>
+            <Button android:text="@string/milk" />
+
+            <EditText
+                android:id="@+id/etMilkPrice"
+                android:autofillHints="unitPrice"
+                android:hint="@string/unit_price"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etMilkQuantity"
+                android:autofillHints="quantity"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etMilkTotal"
+                android:autofillHints="grandTotal"
+                android:focusable="false"
+                android:hint="@string/grand_total"
+                android:inputType="numberDecimal"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+            <Button android:text="@string/grand_total" android:layout_span="1"/>
+
+            <EditText
+                android:id="@+id/etGrandTotal"
+                android:autofillHints="grandTotal"
+                android:focusable="false"
+                android:hint="@string/grand_total"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <TableRow>
+            <Button android:text="@string/discount" android:layout_span="1"/>
+
+            <EditText
+                android:id="@+id/etDiscount"
+                android:autofillHints="discount"
+                android:focusable="false"
+                android:hint="@string/discount"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <TableRow>
+            <Button android:text="@string/net_pay" android:layout_span="1"/>
+
+            <EditText
+                android:id="@+id/etNetPay"
+                android:autofillHints="netPay"
+                android:focusable="false"
+                android:hint="@string/net_pay"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button android:id="@+id/btnCalculate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/calculate"/>
+
+    <Button android:id="@+id/btnStringBuffer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/display_receipt_stringbuffer"/>
+
+    <Button android:id="@+id/btnListView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/display_receipt_listview"/>
+
+    <Button android:id="@+id/btnRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/display_receipt_recyclerview"/>
+
+</LinearLayout>

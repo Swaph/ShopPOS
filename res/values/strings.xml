@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShopPOSApp</string>
+    <string name="item">Item</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="bread">BREAD</string>
+    <string name="pen">PEN</string>
+    <string name="watch">WATCH</string>
+    <string name="milk">MILK</string>
+    <string name="discount">DISCOUNT 15%</string>
+    <string name="net_pay">NET PAY</string>
+    <string name="calculate">Calculate</string>
+    <string name="display_receipt_stringbuffer">Display Receipt (StringBuffer)</string>
+    <string name="display_receipt_listview">Display Receipt (ListView)</string>
+    <string name="display_receipt_recyclerview">Display Receipt (RecyclerView)</string>
+</resources>
